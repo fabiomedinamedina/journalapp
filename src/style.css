@@ -1,0 +1,38 @@
+.footer-container {
+  width: 100%;
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.footer-container p,
+.footer-container a {
+  font-size: 0.8rem;
+  color: #FFF;
+}
+
+@media (min-width: 600px) {
+  .footer-container{
+    position: absolute;
+    bottom: 0;
+    padding: 1rem 2rem;
+    text-align: left;
+  }
+}
+
+.footer-container .link-author {
+  color: #5FF196;
+  font-weight: 700;
+  margin-left: 0.5rem;
+}
+
+.copyright {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 600px) {
+  .copyright{
+    flex-direction: row;
+  }
+}
