@@ -20,6 +20,8 @@ import { Box, Grid, Link, Typography } from "@mui/material";
             variant="contained"
             color="inherit"
             to="https://fabiomedina.com"
+            target="_blank"
+            rel="noopener"
           >
             Fabio Medina Medina
           </Link> 
@@ -30,6 +32,8 @@ import { Box, Grid, Link, Typography } from "@mui/material";
               variant="contained"
               color="inherit"
               to="https://www.linkedin.com/in/fabio-medina-medina/"
+              target="_blank"
+              rel="noopener"
             >
               LinkedIn
             </Link>
@@ -38,6 +42,8 @@ import { Box, Grid, Link, Typography } from "@mui/material";
               variant="contained"
               color="inherit"
               to="https://github.com/fabiomedinamedina"
+              target="_blank"
+              rel="noopener"
             >
               GitHub
             </Link>
@@ -46,6 +52,8 @@ import { Box, Grid, Link, Typography } from "@mui/material";
               variant="contained"
               color="inherit"
               to="https://github.com/fabiomedinamedina/journalapp"
+              target="_blank"
+              rel="noopener"
             >
               Source Code
             </Link>
@@ -53,7 +61,12 @@ import { Box, Grid, Link, Typography } from "@mui/material";
         </Grid>
         <Grid item className="logo-author">
           
-          <Link component={RouterLink} to="https:fabiomedina.com">
+          <Link
+            component={RouterLink}
+            to="https:fabiomedina.com"
+            target="_blank"
+            rel="noopener"
+          >
             <img
               src="/assets/logo-fm-copyright.svg"
               alt="Logo Fabio Medina Medina"
