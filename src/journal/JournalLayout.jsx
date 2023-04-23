@@ -1,14 +1,19 @@
-import { Box, Fab, Toolbar } from '@mui/material';
+import { useState } from 'react';
+import { Box, Toolbar } from '@mui/material';
 import { NavBar, SideBar } from '../ui/components';
 
 const drawerWidth = 300;
 
 export const JournalLayout = ({children}) => {
+  const [mobileOpen, setMobileOpen] = useState(false);
+  const handleDrawerToggle = () => {
+    setMobileOpen(!mobileOpen);
+  };
   return (
     
     <Box sx={{display: 'flex'}}>
-      <NavBar drawerWidth={drawerWidth} />
-      <SideBar drawerWidth={drawerWidth}/>
+      <NavBar drawerWidth={drawerWidth} setOpen={handleDrawerToggle} />
+      <SideBar drawerWidth={drawerWidth} openSidebar={mobileOpen} setOpen={handleDrawerToggle} />
       <Box
         component="main"
         sx={{

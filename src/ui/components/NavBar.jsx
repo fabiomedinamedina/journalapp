@@ -6,7 +6,7 @@ import { AppBar, Box, Grid, IconButton, Toolbar, Typography, } from '@mui/materi
 //IMAGES
 import logoJournalWhite from '../../assets/images/logo-journal-app-blanco-horizontal.svg';
 
-export const NavBar = ({ drawerWidth }) => {
+export const NavBar = ({ drawerWidth, setOpen }) => {
   return (
     <AppBar
       position='fixed'
@@ -19,6 +19,7 @@ export const NavBar = ({ drawerWidth }) => {
         <IconButton
           color="inherit"
           edge="start"
+          onClick={setOpen}
           sx={{mr: 2, display: { md: 'none' }}}
         >
           <MenuOutlined />
