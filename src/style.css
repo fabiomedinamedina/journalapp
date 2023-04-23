@@ -1,3 +1,7 @@
+img{
+  display: block;
+}
+
 .footer-container {
   width: 100%;
   margin-top: 2rem;
@@ -20,10 +24,9 @@
   }
 }
 
-.footer-container .link-author {
+footer .link-author {
   color: #5FF196;
   font-weight: 700;
-  margin-left: 0.5rem;
 }
 
 .copyright {

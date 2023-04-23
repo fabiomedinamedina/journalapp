@@ -8,6 +8,9 @@ import {
 } from "@mui/material";
 import { AuthLayout } from "../layout/AuthLayout";
 
+import iconGoogle from '../../assets/images/auth/social-google.svg';
+
+
 export const LoginPage = () => {
   return (
     <AuthLayout
@@ -90,7 +93,7 @@ export const LoginPage = () => {
                 >
                   <Box sx={{ mr: 1 }} display="flex" alignItems="center">
                     <img
-                      src="/assets/social-google.svg"
+                      src={iconGoogle}
                       alt="google"
                       width={15}
                       height={15}

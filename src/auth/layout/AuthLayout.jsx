@@ -1,8 +1,12 @@
-import { Link as RouterLink } from "react-router-dom";
-import PropTypes from "prop-types";
+import { Link as RouterLink } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
-import { Grid, Stack, Typography, Link } from "@mui/material";
-import { AuthFooter } from "../../ui/components/AuthFooter";
+import { Grid, Stack, Typography, Link } from '@mui/material';
+import { AuthFooter } from '../../ui/components/AuthFooter';
+
+//IMAGES
+import backgroundAuth from '../../assets/images/auth/background-auth.jpg';
+import logoJournal from '../../assets/images/logo-journal-app.svg';
 
 export const AuthLayout = ({ children, title, description, isLogin }) => {
   return (
@@ -14,7 +18,7 @@ export const AuthLayout = ({ children, title, description, isLogin }) => {
       justifyContent="center"
       sx={{
         minHeight: "100vh",
-        backgroundImage: `url(/assets/background-auth.jpg)`,
+        backgroundImage: `url(${backgroundAuth})`,
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
@@ -38,7 +42,7 @@ export const AuthLayout = ({ children, title, description, isLogin }) => {
             >
               <Grid item sx={{ mb: { xs: 2, sm: 4 } }}>
                 <img
-                  src="/assets/logo-journal-app.svg"
+                  src={logoJournal}
                   alt="Logo Journal App - Fabio Medina"
                   loading="lazy"
                 />

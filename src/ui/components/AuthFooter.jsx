@@ -1,5 +1,8 @@
-import { Link as RouterLink } from "react-router-dom";
-import { Box, Grid, Link, Typography } from "@mui/material";
+import { Link as RouterLink } from 'react-router-dom';
+import { Box, Grid, Link, Typography } from '@mui/material';
+
+import logoFM from '../../assets/images/copyright/logo-fm-copyright.svg';
+
 
  export const AuthFooter = () => {
    return (
@@ -68,7 +71,7 @@ import { Box, Grid, Link, Typography } from "@mui/material";
             rel="noopener"
           >
             <img
-              src="/assets/logo-fm-copyright.svg"
+              src={logoFM}
               alt="Logo Fabio Medina Medina"
             />
           </Link>
