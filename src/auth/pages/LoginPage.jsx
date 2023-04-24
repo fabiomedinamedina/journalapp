@@ -1,4 +1,5 @@
-import { useDispatch } from 'react-redux';
+import { useMemo } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import {
   Box,
   Button,
@@ -18,12 +19,15 @@ import iconGoogle from '../../assets/images/auth/social-google.svg';
 
 export const LoginPage = () => {
 
+  const { status } = useSelector( state => state.auth );
   const dispatch = useDispatch();
 
   const {email, password, onInputChange} = useForm({
     email: 'fabio@fabiomedina.com',
     password: '123456'
   });
+
+  const isAuthenticating = useMemo( () => status === 'checking', [status] );
 
   const onSubmit = ( event ) => {
     event.preventDefault();
@@ -81,6 +85,7 @@ export const LoginPage = () => {
             >
               <Grid item xs={12}>
                 <Button
+                  disabled={ isAuthenticating }
                   type="submit"
                   variant="contained"
                   fullWidth
@@ -113,6 +118,7 @@ export const LoginPage = () => {
 
               <Grid item xs={12} sm={8}>
                 <Button
+                  disabled={ isAuthenticating }
                   disableElevation
                   fullWidth
                   variant="outlined"
