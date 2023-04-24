@@ -1,3 +1,4 @@
+import { useDispatch } from 'react-redux';
 import {
   Box,
   Button,
@@ -5,13 +6,37 @@ import {
   Grid,
   TextField,
   Typography,
-} from "@mui/material";
-import { AuthLayout } from "../layout/AuthLayout";
+} from '@mui/material';
 
+import { AuthLayout } from '../layout/AuthLayout';
+import { useForm } from '../../hooks';
+import { checkingAuthentication, startGoogleSignIn } from '../../store/auth';
+
+//Images
 import iconGoogle from '../../assets/images/auth/social-google.svg';
 
 
 export const LoginPage = () => {
+
+  const dispatch = useDispatch();
+
+  const {email, password, onInputChange} = useForm({
+    email: 'fabio@fabiomedina.com',
+    password: '123456'
+  });
+
+  const onSubmit = ( event ) => {
+    event.preventDefault();
+    dispatch( checkingAuthentication() )
+    console.log({email, password});
+  }
+
+  const onGoogleSingIn = () => {
+    dispatch( startGoogleSignIn() );
+    console.log('Iniciar Sesión Google');
+  }
+
+
   return (
     <AuthLayout
       title="¡Hola, Bienvenid@!"
@@ -19,15 +44,18 @@ export const LoginPage = () => {
     >
       <Grid container>
         <Grid item>
-          <form>
+          <form onSubmit={ onSubmit } >
             <Grid container>
               <Grid item xs={12} sx={{ mt: 2 }}>
                 <TextField
                   variant="standard"
                   label="Correo electrónico"
                   type="email"
+                  name="email"
+                  value={email}
                   placeholder="fabio@fabiomedina.com"
                   fullWidth
+                  onChange={ onInputChange }
                 />
               </Grid>
 
@@ -36,8 +64,11 @@ export const LoginPage = () => {
                   label="Contraseña"
                   variant="standard"
                   type="password"
+                  name="password"
+                  value={password}
                   placeholder="***********"
                   fullWidth
+                  onChange={ onInputChange }
                 />
               </Grid>
             </Grid>
@@ -50,6 +81,7 @@ export const LoginPage = () => {
             >
               <Grid item xs={12}>
                 <Button
+                  type="submit"
                   variant="contained"
                   fullWidth
                   size="large"
@@ -90,6 +122,7 @@ export const LoginPage = () => {
                     fontWeight: 400,
                     fontSize: 12,
                   }}
+                  onClick={ onGoogleSingIn }
                 >
                   <Box sx={{ mr: 1 }} display="flex" alignItems="center">
                     <img
