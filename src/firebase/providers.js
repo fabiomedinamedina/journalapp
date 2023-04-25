@@ -1,6 +1,7 @@
 import {
   GoogleAuthProvider,
   createUserWithEmailAndPassword,
+  signInWithEmailAndPassword,
   signInWithPopup,
   updateProfile,
 } from "firebase/auth";
@@ -34,6 +35,34 @@ export const signInWithGoogle = async () => {
   }
 };
 
+export const loginUser = async({email, password}) => {
+  try {
+
+    const result = await signInWithEmailAndPassword(FirebaseAuth, email, password);
+    const { displayName,  photoURL, uid } = result.user;
+
+    return {
+      ok: true,
+      displayName,
+      email,
+      photoURL,
+      uid,
+    };
+    
+  } catch (error) {
+
+    const errorCode = error.code;
+    const getErrorMessage = errorMessageString( errorCode );
+    const errorMessage = (!!getErrorMessage) ? getErrorMessage : error.message;
+    return {
+      ok: false,
+      errorMessage,
+      errorCode,
+    };
+
+  }
+}
+
 export const registerUser = async ({ email, password, displayName }) => {
   try {
     const resp = await createUserWithEmailAndPassword(
@@ -53,24 +82,10 @@ export const registerUser = async ({ email, password, displayName }) => {
       displayName,
     };
   } catch (error) {
+
     const errorCode = error.code;
-    let errorMessage = error.message;
-
-    switch (errorCode) {
-      case "auth/email-already-exists":
-      case 'auth/email-already-in-use':
-        errorMessage = "El usuario con este correo ya existe";
-        break;
-      case "auth/id-token-expired":
-        errorMessage = "La auntenticación expiro";
-        break;
-      case "auth/invalid-password":
-        errorMessage = "La contraseña debe tener más de 6 caracteres";
-        break;
-      default:
-        break;
-    }
-
+    const getErrorMessage = errorMessageString( errorCode );
+    const errorMessage = (!!getErrorMessage) ? getErrorMessage : error.message;
     return {
       ok: false,
       errorMessage,
@@ -78,3 +93,24 @@ export const registerUser = async ({ email, password, displayName }) => {
     };
   }
 };
+
+
+const errorMessageString = (codeError) => {
+  switch (codeError) {
+    case "auth/email-already-exists":
+    case 'auth/email-already-in-use':
+      return "El usuario con este correo ya existe";
+    case "auth/id-token-expired":
+      return "La auntenticación expiro";
+    case "auth/invalid-password":
+      return "La contraseña debe tener más de 6 caracteres";
+    case "auth/user-not-found":
+      return "El usuario no existe";
+    case "auth/wrong-password":
+      return "Contraseña invalida";
+    case "auth/too-many-requests":
+      return "Cuenta bloqueada temporalmente por muchos intentos fallidos";
+    default:
+      return null
+  }
+}
