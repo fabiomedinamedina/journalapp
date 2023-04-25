@@ -6,8 +6,8 @@ import { BookmarkAddOutlined } from '@mui/icons-material';
 export const JournalPage = () => {
   return (
     <JournalLayout>
-      {/* <NothingSelectedView /> */}
-      <NoteView />
+      <NothingSelectedView />
+      {/* <NoteView /> */}
       <Fab
         variant="extended"
         size="medium"

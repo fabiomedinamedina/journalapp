@@ -94,6 +94,9 @@ export const registerUser = async ({ email, password, displayName }) => {
   }
 };
 
+export const logoutFirebase = async() => {
+  return await FirebaseAuth.signOut();
+}
 
 const errorMessageString = (codeError) => {
   switch (codeError) {

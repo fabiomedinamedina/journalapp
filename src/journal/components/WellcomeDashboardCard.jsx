@@ -1,11 +1,16 @@
+import { useSelector } from "react-redux";
 import { Box, Button, Card, CardActions, CardContent, Typography } from "@mui/material";
 
 export const WellcomeDashboardCard = () => {
+
+  const { displayName } = useSelector(state => state.auth);
+
+
   return (
     <Card sx={{ p: 3 }}>
       <CardContent>
         <Typography variant="h1" color="primary" sx={{ mb: 2 }}>
-          Bienvenido <strong>Fabio</strong>
+          Bienvenido <strong>{displayName}</strong>
         </Typography>
         <Typography>
           Desde ya puedes disfrutar tu <strong>JournalApp</strong>.
