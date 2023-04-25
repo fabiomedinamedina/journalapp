@@ -1,6 +1,6 @@
 import { useMemo, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { Button, Grid, TextField } from "@mui/material";
+import { Alert, Button, Grid, TextField } from "@mui/material";
 import { AuthLayout } from "../layout/AuthLayout";
 import { useForm } from "../../hooks";
 import { startRegisterUser } from "../../store/auth";
@@ -24,7 +24,7 @@ const formValidations = {
 
 export const RegisterPage = () => {
 
-  const { status } = useSelector( state => state.auth );
+  const { status, errorMessage } = useSelector( state => state.auth );
   const dispatch = useDispatch();
   const [formSubmited, setFormSubmited] = useState(false);
   
@@ -109,6 +109,15 @@ export const RegisterPage = () => {
               spacing={2}
               sx={{ mt: 1, mb: 2 }}
             >
+               <Grid
+                item
+                xs={12}
+                display={ !!errorMessage ? '' : 'none' }
+               >
+                <Alert severity="error">
+                  {errorMessage}
+                </Alert>
+              </Grid>
               <Grid item xs={12}>
                 <Button
                   disabled={ isAuthenticating }
