@@ -1,7 +1,9 @@
-import { useState } from "react";
+import { useMemo, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import { Button, Grid, TextField } from "@mui/material";
 import { AuthLayout } from "../layout/AuthLayout";
 import { useForm } from "../../hooks";
+import { startRegisterUser } from "../../store/auth";
 
 
 const formData = {
@@ -22,6 +24,8 @@ const formValidations = {
 
 export const RegisterPage = () => {
 
+  const { status } = useSelector( state => state.auth );
+  const dispatch = useDispatch();
   const [formSubmited, setFormSubmited] = useState(false);
   
 
@@ -30,13 +34,17 @@ export const RegisterPage = () => {
     isFormValid, displayNameValid, emailValid, passwordValid,
   } = useForm(formData, formValidations);
 
+  const isAuthenticating = useMemo( () => status === 'checking', [status] );
+
   const onSubmit = (event) => {
+    
     event.preventDefault();
     setFormSubmited(true);
-    console.log(formState);
-  }
+    
+    if( !isFormValid ) return;
 
-  console.log(emailValid);
+    dispatch( startRegisterUser( formState ) );
+  }
 
 
   return (
@@ -103,6 +111,7 @@ export const RegisterPage = () => {
             >
               <Grid item xs={12}>
                 <Button
+                  disabled={ isAuthenticating }
                   type="submit"
                   variant="contained"
                   fullWidth
