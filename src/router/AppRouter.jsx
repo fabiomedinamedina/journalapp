@@ -1,28 +1,13 @@
-import { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
 import { Navigate, Route, Routes } from "react-router-dom";
 import { AuthRoutes } from "../auth/routes/AuthRoutes";
 import { JournalRoutes } from "../journal/routes/JournalRoutes";
 import { CheckingAuth } from "../ui/components";
-import { onAuthStateChanged } from "firebase/auth";
-import { FirebaseAuth } from "../firebase";
-import { login, logout } from "../store/auth";
+import { useCheckAuth } from "../hooks";
 
 export const AppRouter = () => {
 
-  const { status } =  useSelector( state => state.auth );
-  const dispatch = useDispatch();
+  const { status } = useCheckAuth();
 
-  useEffect(() => {
-    onAuthStateChanged( FirebaseAuth, (user) => {
-      if( !user ) return dispatch( logout() );
-      const { email, uid, displayName, photoURL } = user;
-      console.log(user);
-      dispatch( login({ email, uid, displayName, photoURL }) )
-  
-    });
-  }, []);
-    
   if( status === 'checking' ) return <CheckingAuth />
 
   return (
