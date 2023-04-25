@@ -25,7 +25,10 @@ export const AuthLayout = ({ children, title, description, isLogin }) => {
         padding: 4,
       }}
     >
-      <Grid item sx={{ boxShadow: 10, backgroundColor: "white" }}>
+      <Grid 
+        className='animate__animated animate__fadeIn'
+        item
+        sx={{ boxShadow: 10, backgroundColor: "white" }}>
         <Grid
           container
           direction="column"

@@ -15,7 +15,10 @@ export const ContentDrawer = () => {
       justifyContent="space-between"
     >
       <Grid item>
-        <Box sx={{ pb: 3 }}>
+        <Box
+          className='animate__animated animate__fadeInLeft'
+          sx={{ pb: 3 }}
+        >
           <Toolbar>
             <Typography component="div" noWrap variant="h6">
               <img
@@ -26,8 +29,11 @@ export const ContentDrawer = () => {
             </Typography>
           </Toolbar>
         </Box>
-        <Divider />
-        <Box sx={{ pt: 3 }}>
+        <Divider className='animate__animated animate__fadeInLeft' />
+        <Box
+          className='animate__animated animate__fadeInLeft'
+          sx={{ pt: 3 }}
+        >
           <Typography color="primary.main" fontWeight={700} variant="h5">
             Lista de notas
           </Typography>
@@ -70,7 +76,7 @@ export const ContentDrawer = () => {
         </Box>
       </Grid>
       <Grid item>
-        <Divider />
+        <Divider className='animate__animated animate__fadeInLeft'/>
         <JournalFooter />
       </Grid>
     </Grid>

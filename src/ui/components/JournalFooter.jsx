@@ -8,7 +8,12 @@ import logoFM from '../../assets/images/copyright/logo-fm-copyright-color.svg';
 
 export const JournalFooter = () => {
   return (
-    <Box component="footer" fontSize={12} sx={{mt:2}}>
+    <Box
+      className='animate__animated animate__fadeInLeft'
+      component="footer"
+      fontSize={12}
+      sx={{mt:2}}
+    >
       <Box>
         <Link
           component={RouterLink}

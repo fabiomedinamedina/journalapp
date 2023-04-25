@@ -11,7 +11,10 @@ export const JournalLayout = ({children}) => {
   };
   return (
     
-    <Box sx={{display: 'flex'}}>
+    <Box
+      className='animate__animated animate__fadeIn'
+      sx={{display: 'flex'}}
+    >
       <NavBar drawerWidth={drawerWidth} setOpen={handleDrawerToggle} />
       <SideBar drawerWidth={drawerWidth} openSidebar={mobileOpen} setOpen={handleDrawerToggle} />
       <Box

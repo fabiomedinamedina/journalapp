@@ -1,4 +1,5 @@
 import { CircularProgress, Grid } from '@mui/material';
+import { AuthFooter } from './AuthFooter';
 
 //IMAGES
 import backgroundAuth from '../../assets/images/auth/background-auth.jpg';
@@ -23,6 +24,7 @@ export const CheckingAuth = () => {
       <Grid item>
         <CircularProgress sx={{color: 'white'}} size={60}/>
       </Grid>
+      <AuthFooter />
     </Grid>
   );
 };

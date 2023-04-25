@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 
 export const DataCard = ({data, title}) => {
   return (
-    <Card
+    <Card className='animate__animated animate__fadeInUp '
       sx={{
         backgroundColor: "primary.light",
         height: '100%',

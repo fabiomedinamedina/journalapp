@@ -3,6 +3,7 @@ import { Card, CardContent, Typography } from "@mui/material";
 export const AddNewNoteCard = () => {
   return (
     <Card
+      className='animate__animated animate__fadeInUp'
       sx={{
         backgroundColor: 'secondary.light',
         color: 'secondary.main',
