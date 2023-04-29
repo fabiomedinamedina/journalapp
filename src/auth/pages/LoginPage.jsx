@@ -29,8 +29,6 @@ const formValidations = {
   password: [(value) => value.length >= 6 , 'La contraseña debe tener más de 6 caracteres'],
 }
 
-
-
 export const LoginPage = () => {
 
   const [formSubmited, setFormSubmited] = useState(false);

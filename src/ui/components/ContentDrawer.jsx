@@ -1,6 +1,6 @@
-import { TurnedInNot } from "@mui/icons-material";
-import { Box, Divider, Grid, List, ListItem, ListItemButton, ListItemIcon, ListItemText, Toolbar, Typography } from "@mui/material";
+import { Box, Divider, Grid, Toolbar, Typography } from "@mui/material";
 import { JournalFooter } from "./JournalFooter";
+import { ListNotes } from "../../journal/components";
 
 //IMAGES
 import logoJournal from '../../assets/images/logo-journal-app.svg';
@@ -37,42 +37,7 @@ export const ContentDrawer = () => {
           <Typography color="primary.main" fontWeight={700} variant="h5">
             Lista de notas
           </Typography>
-          <List>
-            {["Enero", "Febrero", "Marzo", "Abril"].map((text) => (
-              <ListItem key={text} disableGutters dense={true}>
-                <ListItemButton
-                  alignItems="flex-start"
-                  sx={{
-                    ":hover": {
-                      color: "primary",
-                      bgcolor: "primary.light",
-                    },
-                  }}
-                >
-                  <ListItemIcon>
-                    <TurnedInNot color="secondary" />
-                  </ListItemIcon>
-                  <Grid container>
-                    <ListItemText
-                      primary={text}
-                      primaryTypographyProps={{
-                        fontWeight: 700,
-                        color: "primary",
-                        fontSize: 16,
-                        lineHeight: 1,
-                      }}
-                      sx={{
-                        mb: 0,
-                      }}
-                    />
-                    <ListItemText
-                      secondary={"Ingresa tus datos para continuar"}
-                    />
-                  </Grid>
-                </ListItemButton>
-              </ListItem>
-            ))}
-          </List>
+          <ListNotes />
         </Box>
       </Grid>
       <Grid item>
