@@ -1,10 +1,15 @@
-import { useSelector } from "react-redux";
-import { Box, Button, Card, CardActions, CardContent, Typography } from "@mui/material";
+import { useDispatch, useSelector } from "react-redux";
+import { Button, Card, CardActions, CardContent, Typography } from "@mui/material";
+import { startNewNote } from "../../store/journal";
 
 export const WelcomeDashboardCard = () => {
 
+  const dispatch = useDispatch();
   const { displayName } = useSelector(state => state.auth);
 
+  const onClickNewNote = () => {
+    dispatch( startNewNote() );
+  }
 
   return (
     <Card sx={{ p: 3 }} className='animate__animated animate__fadeInUp '>
@@ -21,7 +26,10 @@ export const WelcomeDashboardCard = () => {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button variant="outlined" >
+        <Button
+          onClick={ onClickNewNote }
+          variant="outlined"
+        >
           Agregar una nota
         </Button>
       </CardActions>

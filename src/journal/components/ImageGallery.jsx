@@ -20,10 +20,11 @@ export const ImageGallery = ({ images }) => {
     >
       {
         images.map((image) => (
-          <ImageListItem key={image}>
+          <ImageListItem key={image.id}>
             <img
-              src={`${ image }?w=164&h=164&fit=crop&auto=format`}
-              srcSet={`${ image }?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
+
+              src={`${ image.url }?w=164&h=164&fit=crop&auto=format`}
+              srcSet={`${ image.url }?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
               alt="Imagen de nota"
               loading="lazy"
             />

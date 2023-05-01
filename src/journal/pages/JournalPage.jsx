@@ -4,15 +4,24 @@ import { BookmarkAddOutlined } from '@mui/icons-material';
 import { JournalLayout } from '../JournalLayout';
 import { NoteView, NothingSelectedView } from '../views';
 import { startNewNote } from '../../store/journal';
+import { useEffect } from 'react';
+import Swal from 'sweetalert2';
 
 export const JournalPage = () => {
 
-  const { isSaving, activeNote } = useSelector( state => state.journal );
+  const { isSaving, activeNote, messageAction } = useSelector( state => state.journal );
   const dispatch = useDispatch();
   
   const onClickNewNote = () => {
     dispatch( startNewNote() );
   }
+
+  useEffect(() => {
+    if(!!messageAction){
+      const { title, message, type } = messageAction
+      Swal.fire( title, message, type );
+    }
+  }, [messageAction]);
 
   return (
     <JournalLayout>

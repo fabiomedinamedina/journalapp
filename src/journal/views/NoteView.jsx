@@ -13,7 +13,7 @@ import Swal from "sweetalert2";
 export const NoteView = () => {
 
   const dispatch = useDispatch();
-  const { activeNote, isSaving, messageAction } = useSelector( state => state.journal );
+  const { activeNote, isSaving } = useSelector( state => state.journal );
 
   const { body, title, date, onInputChange, formState } = useForm(activeNote);
 
@@ -27,13 +27,6 @@ export const NoteView = () => {
   useEffect(() => {
     dispatch( setActiveNote( formState ) );
   }, [formState]);
-
-  useEffect(() => {
-    if(!!messageAction){
-      const { title, message, type } = messageAction
-      Swal.fire( title, message, type );
-    }
-  }, [messageAction]);
 
   const onSaveNote = () => {
     dispatch( startSaveNote() );

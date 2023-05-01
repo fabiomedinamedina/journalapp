@@ -1,7 +1,7 @@
 import { collection, deleteDoc, doc, setDoc } from "firebase/firestore/lite";
 import { FirebaseDB } from "../../firebase";
 import { addNewEmptyNote, deleteNoteById, messageAction, savingNewNote, setActiveNote, setNotes, setPhotosToActiveNote, setSaving, updatedNote } from "./";
-import { fileUpload, loadNotes } from "../../helpers";
+import { fileDelete, fileUpload, loadNotes } from "../../helpers";
 
 export const startNewNote = () => {
   return async( dispatch, getState ) => {
@@ -62,7 +62,6 @@ export const startSaveNote = () => {
       }));
 
     } catch (error) {
-      console.log(error);
       dispatch( messageAction({
         title: 'Actualización de nota',
         type: 'error',
@@ -97,8 +96,24 @@ export const startDeletingNote = () => {
 
     const docRef = doc( FirebaseDB, `${ uid }/journal/notes/${ note.id }` );
     await deleteDoc( docRef );
+    
+    const fileDeletePromises = [];
+    for (const image of note.imageUrls) {
+      fileDeletePromises.push( fileDelete( image.id ) );
+    }
+    const photosDelete = await Promise.all( fileDeletePromises );
+   
 
     dispatch( deleteNoteById( note.id ) );
+
+    const errorImagesDelete = photosDelete.map( ok => ok === true );
+
+    dispatch( messageAction({
+      title: 'Eliminación de nota',
+      type: 'info',
+      message: `Nota eliminada correctamente, se eliminaron ${errorImagesDelete.length} de ${photosDelete.length} imágenes`
+    }));
+    
 
   }
 }
