@@ -5,13 +5,13 @@ import { Grid, ListItem, ListItemButton, ListItemIcon, ListItemText } from "@mui
 import { useDispatch } from 'react-redux';
 import { setActiveNote } from '../../store/journal';
 
-export const ListItemNote = ({ id, title = '', body, date, imageUrls = [] }) => {
+export const ListItemNote = ({ id, title = '', body, date, imageUrls = [], deleteImages = [] }) => {
 
   const dispatch = useDispatch();
 
   const onClickNote = () => {
     const note = {
-      id, title, body, date, imageUrls
+      id, title, body, date, imageUrls, deleteImages
     }
     dispatch( setActiveNote( note ) );
   };

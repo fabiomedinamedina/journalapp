@@ -21,15 +21,13 @@ export const startNewNote = () => {
 
     newNote.id = newDoc.id;
     dispatch( addNewEmptyNote( newNote ) );
-    dispatch( setActiveNote( newNote ) )
+    dispatch( setActiveNote( {...newNote, deleteImages: []} ) )
     
   }
 }
 
-export const startLoadingNotes = () => {
-  return async( dispatch, getState ) => {
-    
-    const { uid } = getState().auth;
+export const startLoadingNotes = ( uid ) => {
+  return async( dispatch ) => {
     if(!uid) throw new Error( 'El UID no existe' );
 
     const notes = await loadNotes( uid );
@@ -51,6 +49,7 @@ export const startSaveNote = () => {
         ...note
       }
       delete noteToFireStore.id;
+      delete noteToFireStore.deleteImages;
 
       const docRef = doc( FirebaseDB, `${uid}/journal/notes/${note.id}` );
       await setDoc( docRef, noteToFireStore, { merge: true } );
@@ -96,24 +95,16 @@ export const startDeletingNote = () => {
 
     const docRef = doc( FirebaseDB, `${ uid }/journal/notes/${ note.id }` );
     await deleteDoc( docRef );
-    
-    const fileDeletePromises = [];
-    for (const image of note.imageUrls) {
-      fileDeletePromises.push( fileDelete( image.id ) );
-    }
-    const photosDelete = await Promise.all( fileDeletePromises );
-   
-
     dispatch( deleteNoteById( note.id ) );
+  }
+}
 
-    const errorImagesDelete = photosDelete.map( ok => ok === true );
-
-    dispatch( messageAction({
-      title: 'Eliminación de nota',
-      type: 'info',
-      message: `Nota eliminada correctamente, se eliminaron ${errorImagesDelete.length} de ${photosDelete.length} imágenes`
-    }));
-    
-
+export const startDeletingImages = ( images = [] ) => {
+  return async( dispatch ) => {
+    const fileDeletePromises = [];
+    for (const imageId of images) {
+      fileDeletePromises.push( fileDelete( imageId ) );
+    }
+    const resp = await Promise.all( fileDeletePromises );
   }
 }

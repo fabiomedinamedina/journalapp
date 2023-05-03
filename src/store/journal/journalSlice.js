@@ -31,6 +31,7 @@ export const journalSlice = createSlice({
     },
     setNotes: ( state, action ) => {
       state.notes = action.payload;
+      state.isSaving = false;
     },
     setSaving: ( state ) => {
       state.isSaving = true;
@@ -67,6 +68,10 @@ export const journalSlice = createSlice({
       state.notes = state.notes.filter( note => note.id !== action.payload );
       state.isSaving = false;
     },
+    setDeleteImagesById: (state, action) => {
+      state.activeNote.deleteImages = [ ...state.activeNote.deleteImages , action.payload ];
+      state.activeNote.imageUrls = state.activeNote.imageUrls.filter( image => image.id !== action.payload );
+    }
   }
 });
 
@@ -83,4 +88,5 @@ export const {
   setPhotosToActiveNote,
   clearNotesLogout,
   deleteNoteById,
+  setDeleteImagesById,
  } = journalSlice.actions;

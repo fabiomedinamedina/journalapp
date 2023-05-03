@@ -1,14 +1,13 @@
 import { useMemo, useEffect, useRef } from "react";
 import { useDispatch, useSelector } from "react-redux";
 
-import { Button, Card, CardActions, CardContent, Grid, IconButton, TextField, Typography } from "@mui/material";
+import { Button, Card, CardActions, CardContent, Grid, TextField, Typography } from "@mui/material";
 import { DeleteOutline, FileUploadOutlined, SaveOutlined } from "@mui/icons-material";
 import 'sweetalert2/dist/sweetalert2.css';
 
 import { ImageGallery } from "../components/ImageGallery";
 import { useForm } from "../../hooks";
-import { setActiveNote, startDeletingNote, startSaveNote, startUploadingFiles } from "../../store/journal";
-import Swal from "sweetalert2";
+import { messageAction, setActiveNote, startDeletingImages, startDeletingNote, startSaveNote, startUploadingFiles } from "../../store/journal";
 
 export const NoteView = () => {
 
@@ -30,6 +29,7 @@ export const NoteView = () => {
 
   const onSaveNote = () => {
     dispatch( startSaveNote() );
+    dispatch( startDeletingImages( activeNote.deleteImages ) );
   };
 
   const onInputFileChange = async({ target }) => {
@@ -40,7 +40,14 @@ export const NoteView = () => {
   }
 
   const onDelete = () => {
+    const imagesIds = activeNote.imageUrls.map( image => image.id );
+    dispatch( startDeletingImages( imagesIds ) );
     dispatch( startDeletingNote() );
+    dispatch( messageAction({
+      title: 'Eliminación de nota',
+      type: 'info',
+      message: `Nota eliminada correctamente`
+    }));
   }
   
 

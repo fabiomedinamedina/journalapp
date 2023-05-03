@@ -2,6 +2,17 @@ img{
   display: block;
 }
 
+.ListImageItem .ImageAction {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.ListImageItem:hover .ImageAction{
+  visibility: visible;
+  opacity: 1;
+}
+
 .footer-container {
   width: 100%;
   margin-top: 2rem;
