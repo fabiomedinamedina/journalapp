@@ -9,9 +9,9 @@
   <img alt="Material UI" src="https://img.shields.io/badge/-MUI-165fcc?style=for-the-badge&logo=MUI&logoColor=white" />
   <img alt="Yarn" src="https://img.shields.io/badge/Yarn-2C8EBB?style=for-the-badge&logo=yarn&logoColor=white" />
 </div>
+<br />
 Este es el respositorio del proyecto Journal App del curso en Udemy de React con Fernando.
-
-Link de demo: https://journalappfm.netlify.app/
+Link de demo: https://journal.fabiomedina.com/
 
 ## Installation
 
