@@ -11,6 +11,7 @@
 </div>
 <br />
 Este es el respositorio del proyecto Journal App del curso en Udemy de React con Fernando.
+
 Link de demo: https://journal.fabiomedina.com/
 
 ## Installation
