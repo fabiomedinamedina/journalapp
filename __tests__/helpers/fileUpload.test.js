@@ -21,16 +21,23 @@ describe('Pruebas en fileUpload', () => {
     const { id, url } = await fileUpload( file );
     expect( typeof id ).toBe( 'string' );
     expect( typeof url ).toBe( 'string' );
-    // console.log(imageUploaded.id);
     await cloudinary.api.delete_resources([ id ]);
 
   }, 11000);
 
-  test('Debería retornar null', async() => {
+  test('Debería retornar error', async() => {
     const file = new File( [], 'foto-demo.jpg' );
 
-    const imageUploaded = await fileUpload( file );
-    expect( imageUploaded ).toBe( null );
+    // const imageUploaded = await fileUpload( file );
+    // expect( imageUploaded ).toBe( null );
+    await expect( fileUpload(file) ).rejects.toThrowError( 'No se pudo subir la imagen' );
+
+  });
+
+  test('Debería retornar error diciendo que no hay archivo', async() => {
+
+    await expect( fileUpload() ).rejects.toThrowError( 'No hay ningún archivo para subir' );
+
   });
 
 })

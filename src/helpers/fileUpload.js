@@ -2,8 +2,8 @@ import { getEnvironments } from "./getEnvironments";
 
 export const fileUpload = async( file ) => {
 
-  if( !file ) throw new Error('No tenmos ningún archivo para subir');
-  if( !file ) return null; // SOLO PARA TESTING
+  if( !file ) throw new Error('No hay ningún archivo para subir');
+  // if( !file ) return null; // SOLO PARA TESTING
 
   const { VITE_CLOUDINARY, VITE_CLOUDINARY_PRESET } = getEnvironments();
   const formData = new FormData();
@@ -25,8 +25,8 @@ export const fileUpload = async( file ) => {
     };
     
   } catch (error) {
-    // throw new Error( error.message );
-    return null; // SOLO PARA TESTING
+    throw new Error( error.message );
+    // return null; // SOLO PARA TESTING
 
   }
   
