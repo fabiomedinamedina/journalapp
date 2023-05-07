@@ -12,7 +12,7 @@ import {
 
 import { AuthLayout } from '../layout/AuthLayout';
 import { useForm } from '../../hooks';
-import { checkingAuthentication, startGoogleSignIn, startLoginWithEmailPassword } from '../../store/auth';
+import { startGoogleSignIn, startLoginWithEmailPassword } from '../../store/auth';
 
 //Images
 import iconGoogle from '../../assets/images/auth/social-google.svg';
@@ -63,11 +63,12 @@ export const LoginPage = () => {
     >
       <Grid container>
         <Grid item>
-          <form onSubmit={ onSubmit } >
+          <form  aria-label='submit-form' onSubmit={ onSubmit } >
             <Grid container>
               <Grid item xs={12} sx={{ mt: 2 }}>
                 <TextField
                   variant="standard"
+                  aria-label='input-form'
                   label="Correo electrónico"
                   type="email"
                   name="email"
@@ -83,6 +84,10 @@ export const LoginPage = () => {
               <Grid item xs={12} sx={{ mt: 2 }}>
                 <TextField
                   label="Contraseña"
+                  aria-label='input-form'
+                  inputProps= {{
+                    'data-testid': 'Contraseña'
+                  }}
                   variant="standard"
                   type="password"
                   name="password"
@@ -149,6 +154,7 @@ export const LoginPage = () => {
                   disabled={ isAuthenticating }
                   disableElevation
                   fullWidth
+                  aria-label='btn-google'
                   variant="outlined"
                   sx={{
                     color: "grey.700",

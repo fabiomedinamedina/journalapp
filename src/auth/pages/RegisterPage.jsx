@@ -56,7 +56,7 @@ export const RegisterPage = () => {
     >
       <Grid container>
         <Grid item>
-          <form onSubmit={ onSubmit } >
+          <form onSubmit={ onSubmit } aria-label="form-submit">
             <Grid container>
             <Grid item xs={12} sx={{ mt: 2 }}>
                 <TextField
@@ -95,6 +95,9 @@ export const RegisterPage = () => {
                   type="password"
                   placeholder="***********"
                   fullWidth
+                  inputProps={{
+                    'data-testid': 'Contraseña'
+                  }}
                   name="password"
                   value={ password }
                   onChange={ onInputChange }
