@@ -35,7 +35,7 @@ export const JournalPage = () => {
         variant="extended"
         size="medium"
         color="primary"
-        aria-label="add"
+        aria-label="add-new-note"
         onClick={ onClickNewNote }
         sx={{
           position: 'fixed',

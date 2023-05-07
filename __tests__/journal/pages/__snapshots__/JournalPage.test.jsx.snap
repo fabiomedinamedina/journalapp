@@ -385,10 +385,9 @@ exports[`Pruebas en <JournalPage /> Debería renderizar el componente NothingSel
         </div>
       </div>
       <button
-        aria-label="add"
-        class="MuiButtonBase-root MuiFab-root MuiFab-extended MuiFab-sizeMedium MuiFab-primary Mui-disabled MuiFab-root MuiFab-extended MuiFab-sizeMedium MuiFab-primary css-19l2xpc-MuiButtonBase-root-MuiFab-root"
-        disabled=""
-        tabindex="-1"
+        aria-label="add-new-note"
+        class="MuiButtonBase-root MuiFab-root MuiFab-extended MuiFab-sizeMedium MuiFab-primary MuiFab-root MuiFab-extended MuiFab-sizeMedium MuiFab-primary css-19l2xpc-MuiButtonBase-root-MuiFab-root"
+        tabindex="0"
         type="button"
       >
         <svg
@@ -403,6 +402,9 @@ exports[`Pruebas en <JournalPage /> Debería renderizar el componente NothingSel
           />
         </svg>
         Nueva nota
+        <span
+          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+        />
       </button>
     </main>
   </div>
@@ -969,7 +971,7 @@ exports[`Pruebas en <JournalPage /> Debería renderizar el componente correctame
         </div>
       </div>
       <button
-        aria-label="add"
+        aria-label="add-new-note"
         class="MuiButtonBase-root MuiFab-root MuiFab-extended MuiFab-sizeMedium MuiFab-primary Mui-disabled MuiFab-root MuiFab-extended MuiFab-sizeMedium MuiFab-primary css-19l2xpc-MuiButtonBase-root-MuiFab-root"
         disabled=""
         tabindex="-1"

@@ -59,7 +59,7 @@ export const initialStateWithNotes = {
 }
 
 export const initialStateWithoutActiveNotes = {
-  isSaving: true,
+  isSaving: false,
   messageAction: '',
   notes: [ noteDemo, noteDemo2 ],
   activeNote: null,
