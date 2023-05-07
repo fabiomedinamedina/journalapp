@@ -53,7 +53,7 @@ export const NoteView = () => {
   
 
   return (
-    <Card sx={{ p: 4 }}>
+    <Card sx={{ p: 4 }} aria-label="note-view">
       <CardActions sx={{px: 0, pt: 0}}>
         <Grid container direction="row" justifyContent="space-between" spacing={2}>
           <Grid item order={{ xs: 1, sm: 0 }}>

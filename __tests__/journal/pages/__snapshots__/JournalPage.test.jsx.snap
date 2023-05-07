@@ -1,0 +1,994 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en <JournalPage /> Debería renderizar el componente NothingSelectedView 1`] = `
+<div>
+  <div
+    class="animate__animated animate__fadeIn MuiBox-root css-k008qs"
+  >
+    <header
+      class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionFixed mui-fixed css-bpmd5m-MuiPaper-root-MuiAppBar-root"
+    >
+      <div
+        class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular css-hyum1k-MuiToolbar-root"
+      >
+        <button
+          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit MuiIconButton-edgeStart MuiIconButton-sizeMedium css-c78r54-MuiButtonBase-root-MuiIconButton-root"
+          tabindex="0"
+          type="button"
+        >
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+            data-testid="MenuOutlinedIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"
+            />
+          </svg>
+          <span
+            class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+          />
+        </button>
+        <div
+          class="MuiGrid-root MuiGrid-container css-9cyib4-MuiGrid-root"
+        >
+          <div
+            class="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
+          >
+            <img
+              alt="Logo Journal App Blanco - Fabio Medina"
+              src="logo-journal-app-blanco-horizontal.svg"
+              style="vertical-align: middle;"
+            />
+          </div>
+          <button
+            class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit MuiIconButton-sizeMedium css-zylse7-MuiButtonBase-root-MuiIconButton-root"
+            tabindex="0"
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+              data-testid="LogoutOutlinedIcon"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="m17 8-1.41 1.41L17.17 11H9v2h8.17l-1.58 1.58L17 16l4-4-4-4zM5 5h7V3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h7v-2H5V5z"
+              />
+            </svg>
+            <span
+              class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+            />
+          </button>
+        </div>
+      </div>
+    </header>
+    <nav
+      class="MuiBox-root css-1n23kq8"
+    >
+      <div
+        class="MuiDrawer-root MuiDrawer-docked css-x2oycp-MuiDrawer-docked"
+      >
+        <div
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation0 MuiDrawer-paper MuiDrawer-paperAnchorLeft MuiDrawer-paperAnchorDockedLeft css-12i7wg6-MuiPaper-root-MuiDrawer-paper"
+        >
+          <div
+            class="MuiGrid-root MuiGrid-container MuiGrid-direction-xs-column MuiGrid-wrap-xs-nowrap css-1l5quv8-MuiGrid-root"
+          >
+            <div
+              class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+            >
+              <div
+                class="animate__animated animate__fadeInLeft MuiBox-root css-hshm0p"
+              >
+                <div
+                  class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular css-hyum1k-MuiToolbar-root"
+                >
+                  <div
+                    class="MuiTypography-root MuiTypography-h6 MuiTypography-noWrap css-8u39c-MuiTypography-root"
+                  >
+                    <img
+                      alt="Logo Journal App - Fabio Medina"
+                      src="logo-journal-app.svg"
+                      width="100%"
+                    />
+                  </div>
+                </div>
+              </div>
+              <hr
+                class="MuiDivider-root MuiDivider-fullWidth animate__animated animate__fadeInLeft css-9mgopn-MuiDivider-root"
+              />
+              <div
+                class="animate__animated animate__fadeInLeft MuiBox-root css-19n8dai"
+              >
+                <h5
+                  class="MuiTypography-root MuiTypography-h5 css-1uo87qf-MuiTypography-root"
+                >
+                  Lista de notas
+                </h5>
+                <ul
+                  class="MuiList-root MuiList-padding css-h4y409-MuiList-root"
+                >
+                  <li
+                    class="MuiListItem-root MuiListItem-dense MuiListItem-padding css-15roeu2-MuiListItem-root"
+                  >
+                    <div
+                      class="MuiButtonBase-root MuiListItemButton-root MuiListItemButton-dense MuiListItemButton-gutters MuiListItemButton-alignItemsFlexStart MuiListItemButton-root MuiListItemButton-dense MuiListItemButton-gutters MuiListItemButton-alignItemsFlexStart css-1xcldlp-MuiButtonBase-root-MuiListItemButton-root"
+                      role="button"
+                      tabindex="0"
+                    >
+                      <div
+                        class="MuiListItemIcon-root MuiListItemIcon-alignItemsFlexStart css-p2p6ci-MuiListItemIcon-root"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="MuiSvgIcon-root MuiSvgIcon-colorSecondary MuiSvgIcon-fontSizeMedium css-kw0y8f-MuiSvgIcon-root"
+                          data-testid="TurnedInNotIcon"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M17 3H7c-1.1 0-1.99.9-1.99 2L5 21l7-3 7 3V5c0-1.1-.9-2-2-2zm0 15-5-2.18L7 18V5h10v13z"
+                          />
+                        </svg>
+                      </div>
+                      <div
+                        class="MuiGrid-root MuiGrid-container css-11lq3yg-MuiGrid-root"
+                      >
+                        <div
+                          class="MuiListItemText-root MuiListItemText-dense css-1mg3woh-MuiListItemText-root"
+                        >
+                          <span
+                            class="MuiTypography-root MuiTypography-body2 MuiListItemText-primary css-85b4a7-MuiTypography-root"
+                          >
+                            Titulo
+                          </span>
+                        </div>
+                        <div
+                          class="MuiListItemText-root MuiListItemText-dense css-tlelie-MuiListItemText-root"
+                        >
+                          <p
+                            class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-83ijpv-MuiTypography-root"
+                          >
+                            Descripción de la nota
+                          </p>
+                        </div>
+                      </div>
+                      <span
+                        class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                      />
+                    </div>
+                  </li>
+                  <li
+                    class="MuiListItem-root MuiListItem-dense MuiListItem-padding css-15roeu2-MuiListItem-root"
+                  >
+                    <div
+                      class="MuiButtonBase-root MuiListItemButton-root MuiListItemButton-dense MuiListItemButton-gutters MuiListItemButton-alignItemsFlexStart MuiListItemButton-root MuiListItemButton-dense MuiListItemButton-gutters MuiListItemButton-alignItemsFlexStart css-1xcldlp-MuiButtonBase-root-MuiListItemButton-root"
+                      role="button"
+                      tabindex="0"
+                    >
+                      <div
+                        class="MuiListItemIcon-root MuiListItemIcon-alignItemsFlexStart css-p2p6ci-MuiListItemIcon-root"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="MuiSvgIcon-root MuiSvgIcon-colorSecondary MuiSvgIcon-fontSizeMedium css-kw0y8f-MuiSvgIcon-root"
+                          data-testid="TurnedInNotIcon"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M17 3H7c-1.1 0-1.99.9-1.99 2L5 21l7-3 7 3V5c0-1.1-.9-2-2-2zm0 15-5-2.18L7 18V5h10v13z"
+                          />
+                        </svg>
+                      </div>
+                      <div
+                        class="MuiGrid-root MuiGrid-container css-11lq3yg-MuiGrid-root"
+                      >
+                        <div
+                          class="MuiListItemText-root MuiListItemText-dense css-1mg3woh-MuiListItemText-root"
+                        >
+                          <span
+                            class="MuiTypography-root MuiTypography-body2 MuiListItemText-primary css-85b4a7-MuiTypography-root"
+                          >
+                            Titulo nota 2
+                          </span>
+                        </div>
+                        <div
+                          class="MuiListItemText-root MuiListItemText-dense css-tlelie-MuiListItemText-root"
+                        >
+                          <p
+                            class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-83ijpv-MuiTypography-root"
+                          >
+                            Descripción de la nota 2
+                          </p>
+                        </div>
+                      </div>
+                      <span
+                        class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                      />
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+            >
+              <hr
+                class="MuiDivider-root MuiDivider-fullWidth animate__animated animate__fadeInLeft css-9mgopn-MuiDivider-root"
+              />
+              <footer
+                class="animate__animated animate__fadeInLeft MuiBox-root css-w5shpn"
+              >
+                <div
+                  class="MuiBox-root css-0"
+                >
+                  <a
+                    class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1bhi0za-MuiTypography-root-MuiLink-root"
+                    href="https:fabiomedina.com"
+                    rel="noopener"
+                    target="_blank"
+                  >
+                    <img
+                      alt="Logo Fabio Medina Medina"
+                      src="logo-fm-copyright-color.svg"
+                    />
+                  </a>
+                  <p
+                    class="MuiTypography-root MuiTypography-body1 css-rl0whq-MuiTypography-root"
+                  >
+                    ©
+                    2023
+                     Todos los derechos reservados.
+                  </p>
+                </div>
+                <div
+                  class="MuiBox-root css-0"
+                >
+                  <a
+                    class="MuiTypography-root MuiTypography-contained MuiLink-root MuiLink-underlineAlways link-author css-1cghntr-MuiTypography-root-MuiLink-root"
+                    href="https://fabiomedina.com"
+                    rel="noopener"
+                    target="_blank"
+                  >
+                    Fabio Medina Medina
+                  </a>
+                </div>
+                <div
+                  class="MuiBox-root css-199xzet"
+                >
+                  <a
+                    class="MuiTypography-root MuiTypography-contained MuiLink-root MuiLink-underlineAlways css-1cghntr-MuiTypography-root-MuiLink-root"
+                    href="https://www.linkedin.com/in/fabio-medina-medina/"
+                    rel="noopener"
+                    target="_blank"
+                  >
+                    LinkedIn
+                  </a>
+                  <a
+                    class="MuiTypography-root MuiTypography-contained MuiLink-root MuiLink-underlineAlways css-1cghntr-MuiTypography-root-MuiLink-root"
+                    href="https://github.com/fabiomedinamedina"
+                    rel="noopener"
+                    target="_blank"
+                  >
+                    GitHub
+                  </a>
+                  <a
+                    class="MuiTypography-root MuiTypography-contained MuiLink-root MuiLink-underlineAlways css-1cghntr-MuiTypography-root-MuiLink-root"
+                    href="https://github.com/fabiomedinamedina/journalapp"
+                    rel="noopener"
+                    target="_blank"
+                  >
+                    Source Code
+                  </a>
+                </div>
+              </footer>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main
+      class="MuiBox-root css-zxdg2z"
+    >
+      <div
+        class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular css-hyum1k-MuiToolbar-root"
+      />
+      <div
+        aria-label="nothing-note"
+        class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-4 css-480o17-MuiGrid-root"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-sm-9 css-3g87li-MuiGrid-root"
+        >
+          <div
+            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root animate__animated animate__fadeInUp  css-ctcgil-MuiPaper-root-MuiCard-root"
+          >
+            <div
+              class="MuiCardContent-root css-46bh2p-MuiCardContent-root"
+            >
+              <h1
+                class="MuiTypography-root MuiTypography-h1 css-1i7tk0r-MuiTypography-root"
+              >
+                Bienvenid@ 
+                <strong>
+                  Fabio Medina
+                </strong>
+              </h1>
+              <p
+                class="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
+              >
+                Desde ya puedes disfrutar tu 
+                <strong>
+                  JournalApp
+                </strong>
+                .
+              </p>
+              <p
+                class="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
+              >
+                Recuerda que puedes crear una nota nueva o hacer clic sobre una para visualizar el detalle.
+              </p>
+            </div>
+            <div
+              class="MuiCardActions-root MuiCardActions-spacing css-1t6e9jv-MuiCardActions-root"
+            >
+              <button
+                class="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium css-1rwt2y5-MuiButtonBase-root-MuiButton-root"
+                tabindex="0"
+                type="button"
+              >
+                Agregar una nota
+                <span
+                  class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-3 css-zbaamk-MuiGrid-root"
+        >
+          <div
+            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root animate__animated animate__fadeInUp  css-s5wceu-MuiPaper-root-MuiCard-root"
+          >
+            <div
+              class="MuiCardContent-root css-46bh2p-MuiCardContent-root"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiSvgIcon-colorPrimary MuiSvgIcon-fontSizeLarge css-bsqp9w-MuiSvgIcon-root"
+                data-testid="TurnedInIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M17 3H7c-1.1 0-1.99.9-1.99 2L5 21l7-3 7 3V5c0-1.1-.9-2-2-2z"
+                />
+              </svg>
+              <p
+                class="MuiTypography-root MuiTypography-body1 css-izd1ik-MuiTypography-root"
+              >
+                2
+              </p>
+              <p
+                class="MuiTypography-root MuiTypography-body1 css-vumhw1-MuiTypography-root"
+              >
+                Total de notas
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button
+        aria-label="add"
+        class="MuiButtonBase-root MuiFab-root MuiFab-extended MuiFab-sizeMedium MuiFab-primary Mui-disabled MuiFab-root MuiFab-extended MuiFab-sizeMedium MuiFab-primary css-19l2xpc-MuiButtonBase-root-MuiFab-root"
+        disabled=""
+        tabindex="-1"
+        type="button"
+      >
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-elhp89-MuiSvgIcon-root"
+          data-testid="BookmarkAddOutlinedIcon"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M17 11v6.97l-5-2.14-5 2.14V5h6V3H7c-1.1 0-2 .9-2 2v16l7-3 7 3V11h-2zm4-4h-2v2h-2V7h-2V5h2V3h2v2h2v2z"
+          />
+        </svg>
+        Nueva nota
+      </button>
+    </main>
+  </div>
+</div>
+`;
+
+exports[`Pruebas en <JournalPage /> Debería renderizar el componente correctamente con nota activa 1`] = `
+<div>
+  <div
+    class="animate__animated animate__fadeIn MuiBox-root css-k008qs"
+  >
+    <header
+      class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionFixed mui-fixed css-bpmd5m-MuiPaper-root-MuiAppBar-root"
+    >
+      <div
+        class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular css-hyum1k-MuiToolbar-root"
+      >
+        <button
+          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit MuiIconButton-edgeStart MuiIconButton-sizeMedium css-c78r54-MuiButtonBase-root-MuiIconButton-root"
+          tabindex="0"
+          type="button"
+        >
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+            data-testid="MenuOutlinedIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"
+            />
+          </svg>
+          <span
+            class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+          />
+        </button>
+        <div
+          class="MuiGrid-root MuiGrid-container css-9cyib4-MuiGrid-root"
+        >
+          <div
+            class="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
+          >
+            <img
+              alt="Logo Journal App Blanco - Fabio Medina"
+              src="logo-journal-app-blanco-horizontal.svg"
+              style="vertical-align: middle;"
+            />
+          </div>
+          <button
+            class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit MuiIconButton-sizeMedium css-zylse7-MuiButtonBase-root-MuiIconButton-root"
+            tabindex="0"
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+              data-testid="LogoutOutlinedIcon"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="m17 8-1.41 1.41L17.17 11H9v2h8.17l-1.58 1.58L17 16l4-4-4-4zM5 5h7V3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h7v-2H5V5z"
+              />
+            </svg>
+            <span
+              class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+            />
+          </button>
+        </div>
+      </div>
+    </header>
+    <nav
+      class="MuiBox-root css-1n23kq8"
+    >
+      <div
+        class="MuiDrawer-root MuiDrawer-docked css-x2oycp-MuiDrawer-docked"
+      >
+        <div
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation0 MuiDrawer-paper MuiDrawer-paperAnchorLeft MuiDrawer-paperAnchorDockedLeft css-12i7wg6-MuiPaper-root-MuiDrawer-paper"
+        >
+          <div
+            class="MuiGrid-root MuiGrid-container MuiGrid-direction-xs-column MuiGrid-wrap-xs-nowrap css-1l5quv8-MuiGrid-root"
+          >
+            <div
+              class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+            >
+              <div
+                class="animate__animated animate__fadeInLeft MuiBox-root css-hshm0p"
+              >
+                <div
+                  class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular css-hyum1k-MuiToolbar-root"
+                >
+                  <div
+                    class="MuiTypography-root MuiTypography-h6 MuiTypography-noWrap css-8u39c-MuiTypography-root"
+                  >
+                    <img
+                      alt="Logo Journal App - Fabio Medina"
+                      src="logo-journal-app.svg"
+                      width="100%"
+                    />
+                  </div>
+                </div>
+              </div>
+              <hr
+                class="MuiDivider-root MuiDivider-fullWidth animate__animated animate__fadeInLeft css-9mgopn-MuiDivider-root"
+              />
+              <div
+                class="animate__animated animate__fadeInLeft MuiBox-root css-19n8dai"
+              >
+                <h5
+                  class="MuiTypography-root MuiTypography-h5 css-1uo87qf-MuiTypography-root"
+                >
+                  Lista de notas
+                </h5>
+                <ul
+                  class="MuiList-root MuiList-padding css-h4y409-MuiList-root"
+                >
+                  <li
+                    class="MuiListItem-root MuiListItem-dense MuiListItem-padding css-15roeu2-MuiListItem-root"
+                  >
+                    <div
+                      class="MuiButtonBase-root MuiListItemButton-root MuiListItemButton-dense MuiListItemButton-gutters MuiListItemButton-alignItemsFlexStart MuiListItemButton-root MuiListItemButton-dense MuiListItemButton-gutters MuiListItemButton-alignItemsFlexStart css-1xcldlp-MuiButtonBase-root-MuiListItemButton-root"
+                      role="button"
+                      tabindex="0"
+                    >
+                      <div
+                        class="MuiListItemIcon-root MuiListItemIcon-alignItemsFlexStart css-p2p6ci-MuiListItemIcon-root"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="MuiSvgIcon-root MuiSvgIcon-colorSecondary MuiSvgIcon-fontSizeMedium css-kw0y8f-MuiSvgIcon-root"
+                          data-testid="TurnedInNotIcon"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M17 3H7c-1.1 0-1.99.9-1.99 2L5 21l7-3 7 3V5c0-1.1-.9-2-2-2zm0 15-5-2.18L7 18V5h10v13z"
+                          />
+                        </svg>
+                      </div>
+                      <div
+                        class="MuiGrid-root MuiGrid-container css-11lq3yg-MuiGrid-root"
+                      >
+                        <div
+                          class="MuiListItemText-root MuiListItemText-dense css-1mg3woh-MuiListItemText-root"
+                        >
+                          <span
+                            class="MuiTypography-root MuiTypography-body2 MuiListItemText-primary css-85b4a7-MuiTypography-root"
+                          >
+                            Titulo
+                          </span>
+                        </div>
+                        <div
+                          class="MuiListItemText-root MuiListItemText-dense css-tlelie-MuiListItemText-root"
+                        >
+                          <p
+                            class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-83ijpv-MuiTypography-root"
+                          >
+                            Descripción de la nota
+                          </p>
+                        </div>
+                      </div>
+                      <span
+                        class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                      />
+                    </div>
+                  </li>
+                  <li
+                    class="MuiListItem-root MuiListItem-dense MuiListItem-padding css-15roeu2-MuiListItem-root"
+                  >
+                    <div
+                      class="MuiButtonBase-root MuiListItemButton-root MuiListItemButton-dense MuiListItemButton-gutters MuiListItemButton-alignItemsFlexStart MuiListItemButton-root MuiListItemButton-dense MuiListItemButton-gutters MuiListItemButton-alignItemsFlexStart css-1xcldlp-MuiButtonBase-root-MuiListItemButton-root"
+                      role="button"
+                      tabindex="0"
+                    >
+                      <div
+                        class="MuiListItemIcon-root MuiListItemIcon-alignItemsFlexStart css-p2p6ci-MuiListItemIcon-root"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="MuiSvgIcon-root MuiSvgIcon-colorSecondary MuiSvgIcon-fontSizeMedium css-kw0y8f-MuiSvgIcon-root"
+                          data-testid="TurnedInNotIcon"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M17 3H7c-1.1 0-1.99.9-1.99 2L5 21l7-3 7 3V5c0-1.1-.9-2-2-2zm0 15-5-2.18L7 18V5h10v13z"
+                          />
+                        </svg>
+                      </div>
+                      <div
+                        class="MuiGrid-root MuiGrid-container css-11lq3yg-MuiGrid-root"
+                      >
+                        <div
+                          class="MuiListItemText-root MuiListItemText-dense css-1mg3woh-MuiListItemText-root"
+                        >
+                          <span
+                            class="MuiTypography-root MuiTypography-body2 MuiListItemText-primary css-85b4a7-MuiTypography-root"
+                          >
+                            Titulo nota 2
+                          </span>
+                        </div>
+                        <div
+                          class="MuiListItemText-root MuiListItemText-dense css-tlelie-MuiListItemText-root"
+                        >
+                          <p
+                            class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-83ijpv-MuiTypography-root"
+                          >
+                            Descripción de la nota 2
+                          </p>
+                        </div>
+                      </div>
+                      <span
+                        class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                      />
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+            >
+              <hr
+                class="MuiDivider-root MuiDivider-fullWidth animate__animated animate__fadeInLeft css-9mgopn-MuiDivider-root"
+              />
+              <footer
+                class="animate__animated animate__fadeInLeft MuiBox-root css-w5shpn"
+              >
+                <div
+                  class="MuiBox-root css-0"
+                >
+                  <a
+                    class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1bhi0za-MuiTypography-root-MuiLink-root"
+                    href="https:fabiomedina.com"
+                    rel="noopener"
+                    target="_blank"
+                  >
+                    <img
+                      alt="Logo Fabio Medina Medina"
+                      src="logo-fm-copyright-color.svg"
+                    />
+                  </a>
+                  <p
+                    class="MuiTypography-root MuiTypography-body1 css-rl0whq-MuiTypography-root"
+                  >
+                    ©
+                    2023
+                     Todos los derechos reservados.
+                  </p>
+                </div>
+                <div
+                  class="MuiBox-root css-0"
+                >
+                  <a
+                    class="MuiTypography-root MuiTypography-contained MuiLink-root MuiLink-underlineAlways link-author css-1cghntr-MuiTypography-root-MuiLink-root"
+                    href="https://fabiomedina.com"
+                    rel="noopener"
+                    target="_blank"
+                  >
+                    Fabio Medina Medina
+                  </a>
+                </div>
+                <div
+                  class="MuiBox-root css-199xzet"
+                >
+                  <a
+                    class="MuiTypography-root MuiTypography-contained MuiLink-root MuiLink-underlineAlways css-1cghntr-MuiTypography-root-MuiLink-root"
+                    href="https://www.linkedin.com/in/fabio-medina-medina/"
+                    rel="noopener"
+                    target="_blank"
+                  >
+                    LinkedIn
+                  </a>
+                  <a
+                    class="MuiTypography-root MuiTypography-contained MuiLink-root MuiLink-underlineAlways css-1cghntr-MuiTypography-root-MuiLink-root"
+                    href="https://github.com/fabiomedinamedina"
+                    rel="noopener"
+                    target="_blank"
+                  >
+                    GitHub
+                  </a>
+                  <a
+                    class="MuiTypography-root MuiTypography-contained MuiLink-root MuiLink-underlineAlways css-1cghntr-MuiTypography-root-MuiLink-root"
+                    href="https://github.com/fabiomedinamedina/journalapp"
+                    rel="noopener"
+                    target="_blank"
+                  >
+                    Source Code
+                  </a>
+                </div>
+              </footer>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main
+      class="MuiBox-root css-zxdg2z"
+    >
+      <div
+        class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular css-hyum1k-MuiToolbar-root"
+      />
+      <div
+        aria-label="note-view"
+        class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-xt7fqp-MuiPaper-root-MuiCard-root"
+      >
+        <div
+          class="MuiCardActions-root MuiCardActions-spacing css-1txqq24-MuiCardActions-root"
+        >
+          <div
+            class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 css-1xu1mzw-MuiGrid-root"
+          >
+            <div
+              class="MuiGrid-root MuiGrid-item css-1g45v9k-MuiGrid-root"
+            >
+              <h3
+                class="MuiTypography-root MuiTypography-h3 css-xdn8xi-MuiTypography-root"
+              >
+                31 dic 1969 - 7:07:15 PM
+              </h3>
+            </div>
+            <div
+              class="MuiGrid-root MuiGrid-item css-1fom8j6-MuiGrid-root"
+            >
+              <input
+                multiple=""
+                style="display: none;"
+                type="file"
+              />
+              <button
+                class="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium Mui-disabled MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium css-1wgcmb5-MuiButtonBase-root-MuiButton-root"
+                disabled=""
+                tabindex="-1"
+                type="button"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-7zmjq9-MuiSvgIcon-root"
+                  data-testid="SaveOutlinedIcon"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M17 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V7l-4-4zm2 16H5V5h11.17L19 7.83V19zm-7-7c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3zM6 6h9v4H6z"
+                  />
+                </svg>
+                Guardar
+              </button>
+              <button
+                class="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedSecondary MuiButton-sizeMedium MuiButton-outlinedSizeMedium Mui-disabled MuiButton-root MuiButton-outlined MuiButton-outlinedSecondary MuiButton-sizeMedium MuiButton-outlinedSizeMedium css-y58v9j-MuiButtonBase-root-MuiButton-root"
+                disabled=""
+                tabindex="-1"
+                type="button"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-bq05nv-MuiSvgIcon-root"
+                  data-testid="FileUploadOutlinedIcon"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M18 15v3H6v-3H4v3c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2v-3h-2zM7 9l1.41 1.41L11 7.83V16h2V7.83l2.59 2.58L17 9l-5-5-5 5z"
+                  />
+                </svg>
+              </button>
+              <button
+                class="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedError MuiButton-sizeMedium MuiButton-outlinedSizeMedium Mui-disabled MuiButton-root MuiButton-outlined MuiButton-outlinedError MuiButton-sizeMedium MuiButton-outlinedSizeMedium css-180lf2n-MuiButtonBase-root-MuiButton-root"
+                disabled=""
+                tabindex="-1"
+                type="button"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-bq05nv-MuiSvgIcon-root"
+                  data-testid="DeleteOutlineIcon"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM8 9h8v10H8V9zm7.5-5-1-1h-5l-1 1H5v2h14V4z"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="MuiCardContent-root css-htwctz-MuiCardContent-root"
+        >
+          <div
+            class="MuiGrid-root MuiGrid-container MuiGrid-spacing-sm-4 css-jpn4fe-MuiGrid-root"
+          >
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-sm-6 css-1w0178t-MuiGrid-root"
+            >
+              <div
+                class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root css-1j5gcdd-MuiFormControl-root-MuiTextField-root"
+              >
+                <label
+                  class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-standard MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-standard css-1c2i806-MuiFormLabel-root-MuiInputLabel-root"
+                  data-shrink="true"
+                  for=":r0:"
+                  id=":r0:-label"
+                >
+                  Título
+                </label>
+                <div
+                  class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl css-l4u8b9-MuiInputBase-root-MuiInput-root"
+                >
+                  <input
+                    aria-invalid="false"
+                    class="MuiInputBase-input MuiInput-input css-1x51dt5-MuiInputBase-input-MuiInput-input"
+                    id=":r0:"
+                    name="title"
+                    placeholder="Ingrese un título"
+                    type="text"
+                    value="Titulo nota actualizado"
+                  />
+                </div>
+              </div>
+              <div
+                class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root css-1uhmazi-MuiFormControl-root-MuiTextField-root"
+              >
+                <label
+                  class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-standard MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-standard css-1c2i806-MuiFormLabel-root-MuiInputLabel-root"
+                  data-shrink="true"
+                  for=":r1:"
+                  id=":r1:-label"
+                >
+                  Descripción
+                </label>
+                <div
+                  class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-multiline css-1rcvvn7-MuiInputBase-root-MuiInput-root"
+                >
+                  <textarea
+                    aria-invalid="false"
+                    class="MuiInputBase-input MuiInput-input MuiInputBase-inputMultiline css-66dh3a-MuiInputBase-input-MuiInput-input"
+                    id=":r1:"
+                    name="body"
+                    placeholder="¿Qué sucedió el día de hoy?"
+                    style="height: 0px; overflow: hidden;"
+                  >
+                    Descripción de la nota 2
+                  </textarea>
+                  <textarea
+                    aria-hidden="true"
+                    class="MuiInputBase-input MuiInput-input MuiInputBase-inputMultiline css-66dh3a-MuiInputBase-input-MuiInput-input"
+                    readonly=""
+                    style="visibility: hidden; position: absolute; overflow: hidden; height: 0px; top: 0px; left: 0px; transform: translateZ(0); padding: 0px; width: 100%;"
+                    tabindex="-1"
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-sm-6 css-6dzwqk-MuiGrid-root"
+            >
+              <ul
+                class="MuiImageList-root MuiImageList-standard css-wzhayz-MuiImageList-root"
+                style="grid-template-columns: repeat(3, 1fr); gap: 7px;"
+              >
+                <li
+                  class="MuiImageListItem-root MuiImageListItem-standard ListImageItem css-ta95xa-MuiImageListItem-root"
+                  style="height: 164px; grid-column-end: span 1; grid-row-end: span 1;"
+                >
+                  <div
+                    class="MuiImageListItemBar-root MuiImageListItemBar-positionTop ImageAction css-1d1b3c8-MuiImageListItemBar-root"
+                  >
+                    <div
+                      class="MuiImageListItemBar-titleWrap MuiImageListItemBar-titleWrapTop MuiImageListItemBar-titleWrapActionPosRight css-14q7c0c-MuiImageListItemBar-titleWrap"
+                    >
+                      <div
+                        class="MuiImageListItemBar-title css-dasnyc-MuiImageListItemBar-title"
+                      />
+                    </div>
+                    <div
+                      class="MuiImageListItemBar-actionIcon MuiImageListItemBar-actionIconActionPosRight css-mjbero-MuiImageListItemBar-actionIcon"
+                    >
+                      <button
+                        aria-label="Delete 12"
+                        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-dzhxy5-MuiButtonBase-root-MuiIconButton-root"
+                        tabindex="0"
+                        type="button"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                          data-testid="DeleteOutlineIcon"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM8 9h8v10H8V9zm7.5-5-1-1h-5l-1 1H5v2h14V4z"
+                          />
+                        </svg>
+                        <span
+                          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                        />
+                      </button>
+                    </div>
+                  </div>
+                  <img
+                    alt="Imagen de nota"
+                    class="MuiImageListItem-img"
+                    loading="lazy"
+                    src="https://imagenNota1.jpg?w=164&h=164&fit=crop&auto=format"
+                    srcset="https://imagenNota1.jpg?w=164&h=164&fit=crop&auto=format&dpr=2 2x"
+                  />
+                </li>
+                <li
+                  class="MuiImageListItem-root MuiImageListItem-standard ListImageItem css-ta95xa-MuiImageListItem-root"
+                  style="height: 164px; grid-column-end: span 1; grid-row-end: span 1;"
+                >
+                  <div
+                    class="MuiImageListItemBar-root MuiImageListItemBar-positionTop ImageAction css-1d1b3c8-MuiImageListItemBar-root"
+                  >
+                    <div
+                      class="MuiImageListItemBar-titleWrap MuiImageListItemBar-titleWrapTop MuiImageListItemBar-titleWrapActionPosRight css-14q7c0c-MuiImageListItemBar-titleWrap"
+                    >
+                      <div
+                        class="MuiImageListItemBar-title css-dasnyc-MuiImageListItemBar-title"
+                      />
+                    </div>
+                    <div
+                      class="MuiImageListItemBar-actionIcon MuiImageListItemBar-actionIconActionPosRight css-mjbero-MuiImageListItemBar-actionIcon"
+                    >
+                      <button
+                        aria-label="Delete 21"
+                        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-dzhxy5-MuiButtonBase-root-MuiIconButton-root"
+                        tabindex="0"
+                        type="button"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                          data-testid="DeleteOutlineIcon"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM8 9h8v10H8V9zm7.5-5-1-1h-5l-1 1H5v2h14V4z"
+                          />
+                        </svg>
+                        <span
+                          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                        />
+                      </button>
+                    </div>
+                  </div>
+                  <img
+                    alt="Imagen de nota"
+                    class="MuiImageListItem-img"
+                    loading="lazy"
+                    src="https://imagenNota2.jpg?w=164&h=164&fit=crop&auto=format"
+                    srcset="https://imagenNota2.jpg?w=164&h=164&fit=crop&auto=format&dpr=2 2x"
+                  />
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button
+        aria-label="add"
+        class="MuiButtonBase-root MuiFab-root MuiFab-extended MuiFab-sizeMedium MuiFab-primary Mui-disabled MuiFab-root MuiFab-extended MuiFab-sizeMedium MuiFab-primary css-19l2xpc-MuiButtonBase-root-MuiFab-root"
+        disabled=""
+        tabindex="-1"
+        type="button"
+      >
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-elhp89-MuiSvgIcon-root"
+          data-testid="BookmarkAddOutlinedIcon"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M17 11v6.97l-5-2.14-5 2.14V5h6V3H7c-1.1 0-2 .9-2 2v16l7-3 7 3V11h-2zm4-4h-2v2h-2V7h-2V5h2V3h2v2h2v2z"
+          />
+        </svg>
+        Nueva nota
+      </button>
+    </main>
+  </div>
+</div>
+`;

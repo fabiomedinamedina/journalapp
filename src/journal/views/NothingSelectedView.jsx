@@ -7,8 +7,8 @@ export const NothingSelectedView = () => {
   const { notes } = useSelector( state => state.journal )
 
   return (
-    <Grid container spacing={4}>
-      <Grid item sm={9} >
+    <Grid container spacing={4} aria-label="nothing-note">
+      <Grid item sm={9}  >
         <WelcomeDashboardCard />
       </Grid>
       <Grid item xs={12} sm={3} >

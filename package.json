@@ -37,6 +37,7 @@
     "babel-jest": "^29.5.0",
     "cloudinary": "^1.36.4",
     "dotenv": "^16.0.3",
+    "identity-obj-proxy": "^3.0.0",
     "jest": "^29.5.0",
     "jest-environment-jsdom": "^29.5.0",
     "setimmediate": "^1.0.5",

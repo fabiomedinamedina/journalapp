@@ -53,9 +53,16 @@ export const initialStateSaving = {
 
 export const initialStateWithNotes = {
   isSaving: true,
-  messageAction: 'Mensaje de prueba',
+  messageAction: '',
   notes: [ noteDemo, noteDemo2 ],
   activeNote: noteDemoActive,
+}
+
+export const initialStateWithoutActiveNotes = {
+  isSaving: true,
+  messageAction: '',
+  notes: [ noteDemo, noteDemo2 ],
+  activeNote: null,
 }
 
 export const notesGetFirebase = [
